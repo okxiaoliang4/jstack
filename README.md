@@ -14,7 +14,7 @@ There is no `mcp.json` because this package currently provides skills only.
 ## Install in Claude Code
 
 ```
-/plugin marketplace add okxiaoliang4/agent-plugins
+/plugin marketplace add okxiaoliang4/jstack
 /plugin install jstack@jelf-agent-plugins
 ```
 
