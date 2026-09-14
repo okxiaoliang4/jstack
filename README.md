@@ -1,4 +1,4 @@
-# Jelf Agent Skills
+# Jstack
 
 This repository is a private Agent Plugins package containing the reusable skills from `~/.agents/skills`.
 
@@ -15,11 +15,11 @@ There is no `mcp.json` because this package currently provides skills only.
 
 ```
 /plugin marketplace add okxiaoliang4/agent-plugins
-/plugin install jelf-agent-skills@jelf-agent-plugins
+/plugin install jstack@jelf-agent-plugins
 ```
 
 Claude Code discovers `skills/` at the plugin root, so all skills become available as
-`jelf-agent-skills:<skill-name>` after installation.
+`jstack:<skill-name>` after installation.
 
 ## Source snapshot
 

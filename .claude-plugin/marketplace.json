@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "jelf-agent-skills",
+      "name": "jstack",
       "source": "./",
       "description": "Personal collection of reusable agent skills packaged as a Claude Code plugin.",
       "version": "0.1.0",

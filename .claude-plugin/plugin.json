@@ -1,5 +1,5 @@
 {
-  "name": "jelf-agent-skills",
+  "name": "jstack",
   "version": "0.1.0",
   "description": "Personal collection of reusable agent skills packaged as a Claude Code plugin.",
   "author": {

@@ -1,5 +1,5 @@
 {
-  "name": "jelf-agent-skills",
+  "name": "jstack",
   "version": "0.1.0",
   "description": "Personal collection of reusable agent skills packaged for Codex.",
   "author": {
@@ -15,7 +15,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Jelf Agent Skills",
+    "displayName": "Jstack",
     "shortDescription": "A personal collection of reusable agent skills.",
     "longDescription": "A private, skills-only Codex plugin containing reusable workflows, references, scripts, and assets.",
     "developerName": "Jelf",

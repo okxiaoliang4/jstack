@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "jelf-agent-skills",
+      "name": "jstack",
       "source": {
         "source": "local",
         "path": "./"
