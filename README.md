@@ -1,34 +1,45 @@
 # Jstack
 
-This repository is a private Agent Plugins package containing the reusable skills from `~/.agents/skills`.
+A personal collection of reusable agent skills, packaged as a plugin for both Claude Code and Codex.
 
-## Layout
+The 55 skills under `skills/` cover planning, implementation, review, writing, and design
+workflows. Read `skills/<name>/SKILL.md` to see what each one does.
 
-- `plugin.json` — Agent Plugins v1 manifest.
-- `.claude-plugin/plugin.json` — Claude Code plugin manifest.
-- `.claude-plugin/marketplace.json` — Claude Code marketplace manifest, so the repository can be added as a marketplace directly.
-- `skills/<skill-name>/SKILL.md` — discoverable Agent Skills and their bundled references, scripts, and assets.
+## Install
 
-There is no `mcp.json` because this package currently provides skills only.
-
-## Install in Claude Code
+### Claude Code
 
 ```
 /plugin marketplace add okxiaoliang4/jstack
 /plugin install jstack@jelf-agent-plugins
 ```
 
-Claude Code discovers `skills/` at the plugin root, so all skills become available as
-`jstack:<skill-name>` after installation.
+Skills become available as `jstack:<skill-name>`.
 
-## Source snapshot
+### Codex
 
-The initial snapshot was imported from `/Users/jelf/.agents/skills`. Home Manager/Nix symlinks were materialized as regular files so the package is self-contained and satisfies the Agent Plugins path-containment rules. Local `.git` history, `.DS_Store`, and `*.hm-backup-*` backup artifacts were intentionally left out.
+```
+codex plugin marketplace add okxiaoliang4/jstack
+codex plugin add jstack@jelf-agent-plugins
+```
 
-The source directory is managed by other tooling, so update this repository by reviewing and importing a fresh snapshot rather than replacing the source directory with a checkout.
+Both clients discover `skills/` at the plugin root, and both resolve the plugin from the
+marketplace named `jelf-agent-plugins`, so the install id is `jstack@jelf-agent-plugins`
+either way.
+
+## Layout
+
+| Path | Purpose |
+| --- | --- |
+| `plugin.json` | Agent Plugins v1 manifest |
+| `.claude-plugin/plugin.json` | Claude Code plugin manifest |
+| `.claude-plugin/marketplace.json` | Claude Code marketplace manifest |
+| `.codex-plugin/plugin.json` | Codex plugin manifest |
+| `.agents/plugins/marketplace.json` | Codex marketplace manifest |
+| `skills/<name>/SKILL.md` | A skill, plus its bundled references, scripts, and assets |
+
+There is no `mcp.json` because this package provides skills only.
 
 ## Specification
 
-The package targets Agent Plugins Specification 1.0.0:
-
-<https://agent-plugins.org/specification>
+Targets [Agent Plugins Specification 1.0.0](https://agent-plugins.org/specification).
