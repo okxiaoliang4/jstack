@@ -1,0 +1,17 @@
+{
+  "name": "jelf-agent-skills",
+  "version": "0.1.0",
+  "description": "Personal collection of reusable agent skills packaged as a Claude Code plugin.",
+  "author": {
+    "name": "Jelf",
+    "url": "https://github.com/okxiaoliang4"
+  },
+  "homepage": "https://github.com/okxiaoliang4/agent-plugins",
+  "repository": "https://github.com/okxiaoliang4/agent-plugins",
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "workflow",
+    "productivity"
+  ]
+}

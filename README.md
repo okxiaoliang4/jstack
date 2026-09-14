@@ -5,9 +5,21 @@ This repository is a private Agent Plugins package containing the reusable skill
 ## Layout
 
 - `plugin.json` — Agent Plugins v1 manifest.
+- `.claude-plugin/plugin.json` — Claude Code plugin manifest.
+- `.claude-plugin/marketplace.json` — Claude Code marketplace manifest, so the repository can be added as a marketplace directly.
 - `skills/<skill-name>/SKILL.md` — discoverable Agent Skills and their bundled references, scripts, and assets.
 
 There is no `mcp.json` because this package currently provides skills only.
+
+## Install in Claude Code
+
+```
+/plugin marketplace add okxiaoliang4/agent-plugins
+/plugin install jelf-agent-skills@jelf-agent-plugins
+```
+
+Claude Code discovers `skills/` at the plugin root, so all skills become available as
+`jelf-agent-skills:<skill-name>` after installation.
 
 ## Source snapshot
 
